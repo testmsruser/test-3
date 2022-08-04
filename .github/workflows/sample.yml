@@ -10,6 +10,6 @@ jobs:
   apply:
     runs-on: ubuntu-latest
     steps:
-      - name: Apply
+      - name: echo
         run: | 
          echo "Hello GitHub Actions!."
