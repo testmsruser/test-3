@@ -1,0 +1,15 @@
+name: Terraform apply
+
+on:
+  push:
+    branches: 
+      - master
+  workflow_dispatch:
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Apply
+        run: | 
+         echo "Hello GitHub Actions!."
