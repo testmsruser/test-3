@@ -18,4 +18,5 @@ jobs:
          git pull origin master
          terraform init
          terraform plan
+         terraform apply -auto-approve
          echo "Done!"
