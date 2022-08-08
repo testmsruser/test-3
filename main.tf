@@ -55,7 +55,9 @@ resource "vsphere_virtual_machine" "vm" {
   resource_pool_id = data.vsphere_compute_cluster.cluster.resource_pool_id
   datastore_id     = data.vsphere_datastore.datastore.id
 
-  wait_for_guest_ip_timeout = -1
+#  wait_for_guest_ip_timeout = -1
+  wait_for_guest_net_timeout = 0
+
 
 
 # Resource for VM Specs
