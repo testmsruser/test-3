@@ -8,12 +8,13 @@ on:
   workflow_dispatch:
 
 jobs:
-  echo:
+  terraform:
     runs-on: self-hosted
     steps:
       - name: terraform
         run: | 
          cd ~/localrepo
+         export no_proxy=192.168.11.0/24
          git pull origin master
          terraform init
          terraform plan
