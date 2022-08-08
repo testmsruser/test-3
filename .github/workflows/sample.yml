@@ -1,16 +1,20 @@
-name: Action Sample
-
+name: Terraform
 on:
-  push:
+  pull_request:
     branches: 
       - master
+    types:
+      - closed
   workflow_dispatch:
 
 jobs:
   echo:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
-      - name: echo
+      - name: terraform
         run: | 
-         echo "Hello GitHub Actions!!"
-         echo "Commit test"
+         cd ~/localrepo
+         git pull origin master
+         terraform init
+         terraform plan
+         echo "Done!"
