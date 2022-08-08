@@ -12,4 +12,4 @@ vsphere_template_name = "Ubuntu_tftemplate"         #プロビジョニングす
 prov_vm_num         = 1                             #プロビジョニングする仮想マシンの数
 prov_vmname_prefix  = "Ubuntu_clone1"                #プロビジョニングする仮想マシンの接頭語
 prov_cpu_num        = 4                             #プロビジョニングする仮想マシンのCPUの数
-prov_mem_num        = 4096                          #プロビジョニングする仮想マシンのメモリの(MB)
+prov_mem_num        = 4096                          #プロビジョニングする仮想マシンのメモリ(MB)
