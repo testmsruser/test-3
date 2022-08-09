@@ -16,7 +16,9 @@ jobs:
          cd ~/localrepo
          export no_proxy=192.168.11.0/24
          git pull origin master
+         cp main.tf ../execute_terraform
+         cd ../execute_terraform
          terraform init
          terraform plan
-         terraform apply -auto-approve
+         echo "terraform apply -auto-approve"
          echo "Done!"
