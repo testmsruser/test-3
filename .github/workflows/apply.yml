@@ -19,6 +19,6 @@ jobs:
          cp variable.tfvars ../execute_terraform
          cd ../execute_terraform
          terraform init
-         terraform plan -var-file credential.tfvars -varfile variable.tfvars
+         terraform plan -var-file credential.tfvars -var-file variable.tfvars
          echo "terraform apply -auto-approve"
          echo "Done!"
